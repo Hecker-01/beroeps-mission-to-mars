@@ -1,18 +1,25 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
+import Sidebar from './Sidebar'; // Import Sidebar
 import NewPage from './NewPage';
+import Home from './Home';
 
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div className="bg-black">
         <Header />
-        <main className="flex-grow flex items-center justify-center w-full">
-          <Routes>
-            <Route path="/" element={<h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>} />
-            <Route path="/new-page" element={<NewPage />} />
-          </Routes>
-        </main>
+        <div className="flex flex-row flex-grow">
+          <Sidebar />
+          <main className="flex-grow flex items-center justify-center w-full">
+            <div className="bg-gray-800 text-white h-[calc(100vh-64px-2rem)] w-[calc(100%-0.75rem)] p-3 m-3 ml-1 mt-1 outline outline-4 outline-[#00ffff] rounded-lg">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/new-page" element={<NewPage />} />
+              </Routes>
+            </div>
+          </main>
+        </div>
       </div>
     </Router>
   );
