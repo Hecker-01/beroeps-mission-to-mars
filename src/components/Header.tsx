@@ -38,6 +38,7 @@ function Tabs(tabInfo: { name1: String; link1: To; name2: String; link2: To }) {
           <Link
             to={tabInfo.link1}
             className="flex items-center justify-center text-center hover:underline w-full h-10"
+            draggable="false"
           >
             <span className="text-lg font-semibold">{tabInfo.name1}</span>
           </Link>
@@ -51,6 +52,7 @@ function Tabs(tabInfo: { name1: String; link1: To; name2: String; link2: To }) {
           <Link
             to={tabInfo.link1}
             className="flex items-center justify-center text-center hover:underline w-full h-10"
+            draggable="false"
           >
             <span className="text-lg font-semibold">{tabInfo.name1}</span>
           </Link>
@@ -59,6 +61,7 @@ function Tabs(tabInfo: { name1: String; link1: To; name2: String; link2: To }) {
           <Link
             to={tabInfo.link2}
             className="flex items-center justify-center text-center hover:underline w-full h-10"
+            draggable="false"
           >
             <span className="text-lg font-semibold">{tabInfo.name2}</span>
           </Link>

@@ -13,9 +13,9 @@ function Sidebar() {
   return (
     <div className="bg-gray-800 text-white h-[calc(100vh-64px-3.5rem)] p-2 m-3 mt-1 max-w-32 outline outline-4 outline-[#00ffff] rounded-xl">
       <nav>
-        <ul className="flex flex-col justify-between h-[calc(100vh-64px-4.5rem)]">
+        <ul className="flex flex-col space-y-4 h-[calc(100vh-64px-4.5rem)] overflow-hidden">
           <li>
-            <Link to="/" className="sidebar-icon group">
+            <Link to="/" className="sidebar-icon group" draggable="false">
               <FontAwesomeIcon icon={faHouse} size="xl" />
               <span className="sidebar-tooltip group-hover:scale-100">
                 Home
@@ -23,7 +23,11 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/entertainment" className="sidebar-icon group">
+            <Link
+              to="/entertainment"
+              className="sidebar-icon group"
+              draggable="false"
+            >
               <FontAwesomeIcon icon={faFilm} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Entertainment
@@ -31,7 +35,7 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/health" className="sidebar-icon group">
+            <Link to="/health" className="sidebar-icon group" draggable="false">
               <FontAwesomeIcon icon={faHeart} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Health
@@ -39,7 +43,11 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/travel-info" className="sidebar-icon group">
+            <Link
+              to="/travel-info"
+              className="sidebar-icon group"
+              draggable="false"
+            >
               <FontAwesomeIcon icon={faCompass} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Travel info
@@ -47,7 +55,11 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/food-drink" className="sidebar-icon group">
+            <Link
+              to="/food-drink"
+              className="sidebar-icon group"
+              draggable="false"
+            >
               <FontAwesomeIcon icon={faBurger} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Food & Drink
@@ -55,7 +67,11 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/settings" className="sidebar-icon group">
+            <Link
+              to="/settings"
+              className="sidebar-icon group"
+              draggable="false"
+            >
               <FontAwesomeIcon icon={faSliders} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Settings
