@@ -18,4 +18,9 @@ body {
     text-sm font-bold
     transition-all duration-300 scale-0 origin-left;
   }
+
+  .tab-item {
+    @apply flex items-center justify-center text-center bg-slate-900
+    outline outline-1 outline-[#00ffff] rounded-lg;
+  }
 }
