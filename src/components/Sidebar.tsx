@@ -11,9 +11,9 @@ import {
 
 function Sidebar() {
   return (
-    <div className="bg-gray-800 text-white h-[calc(100vh-64px-2rem)] p-2 m-3 mt-1 outline outline-4 outline-[#00ffff] rounded-xl">
+    <div className="bg-gray-800 text-white h-[calc(100vh-64px-3.5rem)] p-2 m-3 mt-1 max-w-32 outline outline-4 outline-[#00ffff] rounded-xl">
       <nav>
-        <ul className="flex flex-col justify-between h-[calc(100vh-64px-3rem)]">
+        <ul className="flex flex-col justify-between h-[calc(100vh-64px-4.5rem)]">
           <li>
             <Link to="/" className="sidebar-icon group">
               <FontAwesomeIcon icon={faHouse} size="xl" />
@@ -23,7 +23,7 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="sidebar-icon group">
+            <Link to="/entertainment" className="sidebar-icon group">
               <FontAwesomeIcon icon={faFilm} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Entertainment
@@ -31,7 +31,7 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="sidebar-icon group">
+            <Link to="/health" className="sidebar-icon group">
               <FontAwesomeIcon icon={faHeart} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Health
@@ -39,7 +39,7 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="sidebar-icon group">
+            <Link to="/travel-info" className="sidebar-icon group">
               <FontAwesomeIcon icon={faCompass} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Travel info
@@ -47,7 +47,7 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="sidebar-icon group">
+            <Link to="/food-drink" className="sidebar-icon group">
               <FontAwesomeIcon icon={faBurger} size="xl" />{" "}
               <span className="sidebar-tooltip group-hover:scale-100">
                 Food & Drink
