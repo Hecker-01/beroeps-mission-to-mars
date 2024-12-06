@@ -1,9 +1,5 @@
 function Home() {
-    return (
-    <div className="min-h-[calc(screen-16rem)] min-w-screen bg-gray-100">
-      
-    </div>
-    );
+  return <h1 className="text-4xl font-bold text-blue-500">Home</h1>;
 }
 
 export default Home;
