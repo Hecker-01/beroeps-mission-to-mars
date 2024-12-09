@@ -36,7 +36,7 @@ const AppContent = () => {
       <div className="flex flex-row flex-grow">
         <Sidebar />
         <main className="flex-grow flex items-center justify-center w-full">
-          <div className="bg-gray-800 text-white h-[calc(100vh-64px-3.5rem)] w-[calc(100%-0.75rem)] p-3 m-3 ml-1 mt-1 outline outline-4 outline-[#00ffff] rounded-xl">
+          <div className="bg-slate-800 text-white h-[calc(100vh-64px-3.5rem)] w-[calc(100%-0.75rem)] p-3 m-3 ml-1 mt-1 outline outline-4 outline-[#00ffff] rounded-xl">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/entertainment" element={<Entertainment />} />

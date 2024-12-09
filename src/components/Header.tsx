@@ -9,7 +9,7 @@ const Header = (tabs: {
   link2?: To;
 }) => {
   return (
-    <header className="flex flex-row bg-gray-800 text-white w-[calc(100%-1.5rem)] max-h-32 p-2 m-3 outline outline-4 outline-[#00ffff] rounded-xl pr-4">
+    <header className="flex flex-row bg-slate-800 text-white w-[calc(100%-1.5rem)] max-h-32 p-2 m-3 outline outline-4 outline-[#00ffff] rounded-xl pr-4">
       <div
         className="p-4 mr-8 flex justify-center items-center size-16 bg-slate-700
     rounded-full"

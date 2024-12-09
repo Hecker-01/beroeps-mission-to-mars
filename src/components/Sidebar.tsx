@@ -20,7 +20,7 @@ function Sidebar() {
   );
 
   return (
-    <div className="bg-gray-800 text-white h-[calc(100vh-64px-3.5rem)] p-2 m-3 mt-1 max-w-32 outline outline-4 outline-[#00ffff] rounded-xl">
+    <div className="bg-slate-800 text-white h-[calc(100vh-64px-3.5rem)] p-2 m-3 mt-1 max-w-32 outline outline-4 outline-[#00ffff] rounded-xl">
       <nav>
         <ul className="flex flex-col space-y-4 h-[calc(100vh-64px-4.5rem)] overflow-hidden">
           {renderSidebarItem("Home", "/", faHouse)}
