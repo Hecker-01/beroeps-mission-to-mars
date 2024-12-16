@@ -66,44 +66,44 @@ function getTabs(pathname: string) {
     case "/entertainment":
       return {
         name1: "Movies",
-        link1: "/entertainment",
+        link1: "/movies",
         name2: "Music",
-        link2: "/entertainment",
+        link2: "/music",
       };
     case "/health":
       return {
         name1: "Health",
         link1: "/health",
-        name2: "Health",
-        link2: "/health",
+        name2: "Sports",
+        link2: "/sports",
       };
     case "/travel-info":
       return {
         name1: "Travel Info",
         link1: "/travel-info",
-        name2: "Travel Info",
-        link2: "/travel-info",
+        name2: "Live Prewiew",
+        link2: "/live-preview",
       };
     case "/food-drink":
       return {
-        name1: "Food & Drink",
-        link1: "/food-drink",
-        name2: "Food & Drink",
+        name1: "Dinner",
+        link1: "/dinner",
+        name2: "Snacks & Drink",
         link2: "/food-drink",
       };
     case "/settings":
       return {
         name1: "Settings",
         link1: "/settings",
-        name2: "Settings",
-        link2: "/settings",
+        name2: "Language",
+        link2: "/language",
       };
     default:
       return {
         name1: "Home",
         link1: "/",
-        name2: "Home",
-        link2: "/",
+        name2: "",
+        link2: "",
       };
   }
 }
