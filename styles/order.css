@@ -1,0 +1,41 @@
+@import url("main.css");
+
+.content {
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  margin: 20px auto;
+  margin-bottom: 10px;
+  max-width: 600px;
+  padding: 1em;
+  background: var(--background-color);
+  border-radius: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #333;
+  background: var(--background-color-3);
+  border-radius: 3px;
+  color: black;
+}
+
+form button {
+  padding: 0.7em 1.5em;
+  background: var(--link-color);
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--link-color-hover);
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home • Red Horizons</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/order.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <script src="./scripts/order-handle.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="./assets/logo.png"
+          alt="Mission to mars logo"
+          style="max-height: 128px"
+          draggable="false"
+        />
+        <ul>
+          <li>
+            <a
+              href="./index.html"
+              draggable="false"
+              style="text-decoration: underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./entertainment.html" draggable="false">Enterainment</a>
+          </li>
+          <li>
+            <a href="./health.html" draggable="false">Health</a>
+          </li>
+          <li>
+            <a href="./travel-info.html" draggable="false">Travel Info</a>
+          </li>
+          <li>
+            <a href="./food-drink.html" draggable="false">Food & Drink</a>
+          </li>
+          <li>
+            <a href="./sport.html" draggable="false">Sport</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        <section class="order">
+          <div id="tourSection" style="display: none">
+            <h2>De Tour</h2>
+            <p>
+              AppelTour is een must voor alle muziekliefhebbers! Beleef live
+              optredens van je favoriete artiesten, exclusieve merchandise en
+              onvergetelijke momenten. Ga met ons mee voor een avond vol
+              ongelofelijke muziek, plezier en herinneringen die je je hele
+              leven bij zullen blijven. Mis deze geweldige kans niet om je
+              favoriete muzikanten van dichtbij te zien. Koop nu je tickets en
+              maak deel uit van de AppelMusic tour!
+            </p>
+          </div>
+
+          <div id="comboSection" style="display: none">
+            <h2>De Combo</h2>
+            <p>
+              De Combo is de ultieme ervaring voor elke muziekliefhebber! Deze
+              bundel biedt je toegang tot exclusieve content, speciale
+              merchandise en unieke voordelen die je nergens anders zult vinden.
+              Of je nu een doorgewinterde fan bent of net begint met het
+              ontdekken van onze muziek, de Combo heeft voor ieder wat wils. Mis
+              deze kans niet om deel uit te maken van iets bijzonders en geniet
+              van de beste muziekervaring die er is. Koop nu je bundel en dompel
+              jezelf onder in de wereld van AppelMusic!
+            </p>
+          </div>
+
+          <div id="albumSection" style="display: none">
+            <h2>MaisonAppel (fysieke versie)</h2>
+            <p>
+              MaisonAppel, ons nieuwste album is een meesterwerk dat je niet mag
+              missen! Met een mix van opwindende nieuwe nummers en tijdloze
+              klassiekers, biedt dit album iets voor elke muziekliefhebber. De
+              productie is van topkwaliteit, en de teksten zijn diepgaand en
+              emotioneel. Dit album neemt je mee op een muzikale reis die je
+              keer op keer wilt beleven. Zorg ervoor dat je dit album toevoegt
+              aan je collectie en geniet van de prachtige muziek die AppelMusic
+              te bieden heeft!
+            </p>
+          </div>
+          <div id="errorSection" style="display: none">
+            <h2>Error</h2>
+            <p>Oeps, er is iets fout gegaan. Probeer het later opnieuw.</p>
+            <a href="./food-drink.html">Terug?</a>
+          </div>
+          <form id="form">
+            <input type="text" id="name" placeholder="Uw Naam" required />
+            <input
+              type="number"
+              id="room"
+              placeholder="Uw kamernummer"
+              required
+            />
+            <button type="submit" id="form-button">Bestellen</button>
+          </form>
+          <p id="response" style="display: none"></p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; Red Horizons | 1988 -
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+    </footer>
+  </body>
+</html>
