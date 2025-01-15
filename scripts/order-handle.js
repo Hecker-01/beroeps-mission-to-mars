@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
-const order = urlParams.get("order");
+const item = urlParams.get("item");
 
-switch (order) {
+switch (item) {
   case "ontbijt-diner":
     document.getElementById("ontbijt-diner").style.display = "block";
     break;
