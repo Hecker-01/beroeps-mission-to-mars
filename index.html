@@ -91,6 +91,24 @@
             <p>Stay active with our in-flight sports and fitness options.</p>
             <a href="./sport.html" draggable="false">Get Active</a>
           </div>
+          <div class="dashboard-item">
+            <h2>Webcams</h2>
+            <div class="webcam-frame">
+              <img
+                id="webcam-image"
+                src="./assets/Images/sport.png"
+                alt="Webcam"
+              />
+              <div class="webcam-controls">
+                <button onclick="changeWebcam('sport')">Sport</button>
+                <button onclick="changeWebcam('bibliotheek')">
+                  Bibliotheek
+                </button>
+                <button onclick="changeWebcam('restaurant')">Restaurant</button>
+                <button onclick="changeWebcam('background')">Background</button>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
@@ -102,6 +120,6 @@
         </script>
       </p>
     </footer>
-    <script src="scripts/rocket.js"></script>
+    <script src="scripts/webcam.js"></script>
   </body>
 </html>
