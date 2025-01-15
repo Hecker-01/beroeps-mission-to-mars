@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,13 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <link rel="icon" href="./assets/favicon.ico" />
+    <style>
+      body {
+        background-image: url("./assets/Images/achtergrond.png");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -53,43 +60,50 @@
     </header>
     <main>
       <div class="content">
-        <section
-          class="dashboard"
-          style="background-image: url('./assets/dashboard-bg.jpg')"
-        >
+        <section class="dashboard">
           <div class="dashboard-item">
-            <h2>Flight Information</h2>
+            <h2>Vluchtinformatie</h2>
+            <img src="./assets/Images/reisinfo.png" alt="Vluchtinformatie" />
             <p>
-              Get the latest updates on your flight status, departure times, and
-              more.
+              Krijg de laatste updates over je vluchtstatus, vertrektijden en
+              meer.
             </p>
-            <a href="./travel-info.html" draggable="false">View Details</a>
+            <a href="./travel-info.html" draggable="false">Bekijk Details</a>
           </div>
           <div class="dashboard-item">
-            <h2>Food & Drink</h2>
-            <p>Explore our menu and order your favorite meals and beverages.</p>
-            <a href="./food-drink.html" draggable="false">Order Now</a>
+            <h2>Eten & Drinken</h2>
+            <img src="./assets/Images/restaurant.png" alt="Eten & Drinken" />
+            <p>Bekijk ons menu en bestel je favoriete maaltijden en dranken.</p>
+            <a href="./food-drink.html" draggable="false">Bestel Nu</a>
           </div>
           <div class="dashboard-item">
             <h2>Entertainment</h2>
+            <img src="./assets/Images/bibliotheek.png" alt="Entertainment" />
             <p>
-              Discover movies, music, games, and books to keep you entertained
-              during the flight.
+              Ontdek films, muziek, games en boeken om je te vermaken tijdens de
+              vlucht.
             </p>
-            <a href="./entertainment.html" draggable="false">Explore</a>
+            <a href="./entertainment.html" draggable="false">Verken</a>
           </div>
           <div class="dashboard-item">
-            <h2>Health & Wellness</h2>
+            <h2>Gezondheid & Wellness</h2>
+            <img
+              src="./assets/Images/gezondheid.png"
+              alt="Gezondheid & Wellness"
+            />
             <p>
-              Find tips and resources to stay healthy and comfortable during
-              your journey.
+              Vind tips en bronnen om gezond en comfortabel te blijven tijdens
+              je reis.
             </p>
-            <a href="./health.html" draggable="false">Learn More</a>
+            <a href="./health.html" draggable="false">Leer Meer</a>
           </div>
           <div class="dashboard-item">
             <h2>Sport</h2>
-            <p>Stay active with our in-flight sports and fitness options.</p>
-            <a href="./sport.html" draggable="false">Get Active</a>
+            <img src="./assets/Images/sport.png" alt="Sport" />
+            <p>
+              Blijf actief met onze sport- en fitnessopties tijdens de vlucht.
+            </p>
+            <a href="./sport.html" draggable="false">Word Actief</a>
           </div>
           <div class="dashboard-item">
             <h2>Webcams</h2>
@@ -105,7 +119,6 @@
                   Bibliotheek
                 </button>
                 <button onclick="changeWebcam('restaurant')">Restaurant</button>
-                <button onclick="changeWebcam('background')">Background</button>
               </div>
             </div>
           </div>
