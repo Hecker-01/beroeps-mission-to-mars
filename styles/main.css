@@ -1,52 +1,115 @@
-body {
-  font-family: Arial, sans-serif;
+:root {
+  --primary-color: #c78181;
+  --secondary-color: #e0e0e0;
+  --background-color: #121212;
+  --background-color-2: #1f1f1f;
+  --background-color-3: #1e1e1e;
+  --text-color: #c78181;
+  --secodary-text-color: #b0b0b0;
+  --link-color: #c78181;
+  --link-color-hover: #d58181;
+}
+
+* {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-}
-
-main {
+.content {
+  max-width: 1180px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #333;
-}
-
-p {
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
   line-height: 1.6;
-  color: #666;
 }
 
-a {
-  color: #4caf50;
+header {
+  background-color: var(--background-color-2);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: var(--link-color);
   text-decoration: none;
+  font-size: 1.3rem;
+  font-family: Arial, sans-serif;
 }
 
-a:hover {
+nav ul li a:hover {
+  color: var(--link-color-hover);
   text-decoration: underline;
 }
 
-button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: var(--background-color-3);
+  border-radius: 20px;
 }
 
-button:hover {
-  background-color: #45a049;
+section h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+section h2 {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+section p {
+  font-size: 1rem;
+  color: var(--secodary-text-color);
+}
+
+footer {
+  background-color: var(--background-color-2);
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
 }

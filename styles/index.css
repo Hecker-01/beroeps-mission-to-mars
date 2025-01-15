@@ -1,0 +1,21 @@
+@import url("main.css");
+
+.album {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cover {
+  display: relative;
+  margin: 0;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.info {
+  align-self: flex-start;
+  padding: 5px 20px;
+  display: block;
+}
