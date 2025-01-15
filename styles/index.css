@@ -1,11 +1,10 @@
 @import url("./main.css");
 
-body {
-  background-image: url("./assets/Images/achtergrond.png");
+main {
+  background-image: url("../assets/Images/achtergrond.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: #fff;
 }
 
 .album {

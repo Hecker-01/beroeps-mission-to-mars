@@ -1,5 +1,12 @@
 @import url("./main.css");
 
+main {
+  background-image: url("../assets/Images/restaurant.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .frames {
   display: grid;
   grid-template-columns: 1fr 1fr;
