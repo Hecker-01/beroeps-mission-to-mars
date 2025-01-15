@@ -1,7 +1,7 @@
-@import url("main.css");
+@import url("./main.css");
 
 body {
-  background-image: url('./assets/Images/background.png');
+  background-image: url("./assets/Images/background.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
